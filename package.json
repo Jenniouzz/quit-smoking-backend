@@ -4,8 +4,7 @@
   "description": "Backend proxy for quit smoking agent",
   "main": "api/chat.js",
   "scripts": {
-    "dev": "vercel dev",
-    "build": "vercel build"
+    "build": "echo 'No build step required'"
   },
   "dependencies": {}
 }
