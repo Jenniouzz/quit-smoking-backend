@@ -1,0 +1,28 @@
+# Quit Smoking Backend
+
+Backend proxy service for the Smart Quit Smoking Agent to handle LLM API calls and resolve CORS restrictions.
+
+## Overview
+
+This serverless backend enables the quit smoking frontend to communicate with various LLM providers (OpenAI, Anthropic, Google) without CORS limitations.
+
+## Features
+
+- Supports OpenAI GPT models
+- Supports Anthropic Claude models  
+- Supports Google Gemini models
+- CORS-enabled for browser requests
+- Serverless deployment on Vercel
+
+## API Endpoint
+
+POST `/api/chat`
+
+Request body:
+```json
+{
+  "messages": [{"role": "user", "content": "Hello"}],
+  "provider": "openai",
+  "apiKey": "your-api-key",
+  "model": "gpt-3.5-turbo"
+}
